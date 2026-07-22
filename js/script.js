@@ -9,7 +9,7 @@
   // EDIT: HIDE REPOS — add repo names (exactly as on GitHub) here
   // to exclude them from the Projects section. Not case-sensitive.
   // -----------------------------------------------------------
-  const EXCLUDED_REPOS = ["NetElixir-Algnition-3.0"];
+  const EXCLUDED_REPOS = ["NetElixir-Algnition-3.0","Website"];
 
   const starIcon = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3 6.5 7 .9-5 5 1.2 7-6.2-3.5-6.2 3.5 1.2-7-5-5 7-.9L12 2z"/></svg>';
 
