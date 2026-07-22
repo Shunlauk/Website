@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shunlauk — Portfolio</title>
+<meta name="description" content="Portfolio of Shunlauk — skills, services, and GitHub projects." />
+<meta name="theme-color" content="#030304" />
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
+<meta property="og:title" content="Shunlauk — Portfolio" />
+<meta property="og:description" content="Skills, services, and GitHub projects." />
+<meta property="og:image" content="assets/logo-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<!-- =============================================================
+     HOW TO EDIT THIS SITE — quick guide
+     Project structure: index.html (content) · css/style.css (design) · js/script.js (behavior)
+     1. Skills:        in index.html, search "EDIT: SKILLS"        — edit tag-pill lists
+     2. Services:      in index.html, search "EDIT: SERVICES"      — edit/duplicate .skill-row blocks
+     3. Certificates:  currently HIDDEN (commented out). Search "CERTIFICATES (temporarily removed" to restore it.
+     4. GitHub repos:  in js/script.js, set GITHUB_USERNAME at the top of the file
+     5. More section:  currently HIDDEN (commented out). Search "MORE (temporarily removed" to restore it.
+     6. Contact:       in index.html, search "EDIT: CONTACT"       — set your email + social links
+     7. New section:   see the guide near the closing </body> tag below
+============================================================== -->
+<a href="#home" class="skip-link">Skip to content</a>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner container">
+    <a href="#home" class="brand" aria-label="Shunlauk — home">
+      <img src="assets/logo-mark.png" alt="" class="brand-mark" />
+      <span class="brand-word">SHUNLAUK</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <!-- Certificates temporarily removed — restore this link when the section comes back: <a href="#certificates">Certificates</a> -->
+      <a href="#projects">Projects</a>
+      <!-- More temporarily removed — restore this link when the section has real content: <a href="#more">More</a> -->
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="ripple r1"></div>
+      <div class="ripple r2"></div>
+      <div class="ripple r3"></div>
+    </div>
+    <div class="container hero-inner">
+      <p class="eyebrow"><span class="dot"></span>Portfolio</p>
+      <div class="hero-photo-frame">
+        <img src="assets/logo-mark.png" alt="Portrait of Shunlauk" class="hero-photo" />
+      </div>
+      <h1 class="hero-title"><span>SHUN</span><span class="t-gradient">LAUK</span></h1>
+      <!-- EDIT: replace the line below with your own title / role -->
+      <p class="hero-sub">Python developer focused on automation, Linux tooling, and clean command-line software.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        <!-- EDIT: RESUME — drop your resume PDF at assets/resume.pdf, then uncomment the line below -->
+        <!-- <a href="assets/resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download résumé</a> -->
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>About</p>
+        <h2>The story so far</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-frame reveal">
+          <img src="assets/photo.png" alt="Portrait of Shunlauk" class="about-photo" />
+        </div>
+        <!-- EDIT: replace this paragraph with your own bio -->
+        <div class="about-text reveal">
+          <p>Hi, I'm <strong>Love Jangid</strong> — a Python developer with a strong interest in Linux, automation, and cybersecurity. I enjoy building practical, command-line applications that solve everyday problems efficiently, with a focus on simplicity, readability, and real-world usefulness over unnecessary complexity.</p>
+
+          <p>Right now, I'm focused on:</p>
+          <ul>
+            <li>Developing reliable Python automation tools</li>
+            <li>Sharpening my Linux and systems administration skills</li>
+            <li>Writing clean, maintainable, well-documented code</li>
+          </ul>
+
+          <p>I'm also continuously expanding into networking, APIs, cybersecurity, and cloud technologies, and I add new projects to this portfolio as I learn. I believe the best tools are the ones that quietly do their job well — no bloat, no unnecessary complexity, just something that works.</p>
+
+          <p><strong>Get in Touch</strong><br />
+          📧 Professional inquiries: <a href="mailto:s12had.2766@gmail.com">s12had.2766@gmail.com</a> — for collaborations, freelance work, and job opportunities.<br />
+          💬 Quick chats / work communication: <a href="mailto:shunlauk@gmail.com">shunlauk@gmail.com</a> — for faster back-and-forth and informal messages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SKILLS ============================= -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>Skillset</p>
+        <h2>What I work with</h2>
+        <p class="desc">My Skills Grouped by category so it's easy to read.</p>
+      </div>
+
+      <!-- EDIT: SKILLS — replace the tags below with your own. Duplicate a tag-pill span to add more, or a .skill-row to add a whole new category. -->
+      <div class="skills-list">
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6L3 12l6 6"/><path d="M15 6l6 6-6 6"/></svg>
+            </div>
+            <h3>Languages</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">GDScript</span>
+            <span class="tag-pill">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 14l9 5 9-5"/></svg>
+            </div>
+            <h3>Core Python</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Os</span>
+            <span class="tag-pill">Pathlib</span>
+            <span class="tag-pill">Shutil</span>
+            <span class="tag-pill">argparse</span>
+            <span class="tag-pill">Logging</span>
+            <span class="tag-pill">Collections</span>
+            <span class="tag-pill">Datetime</span>
+            <span class="tag-pill">Time</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 14l9 5 9-5"/></svg>
+            </div>
+            <h3>Tools</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Ubuntu</span>
+            <span class="tag-pill">Git</span>
+            <span class="tag-pill">GitHub</span>
+            <span class="tag-pill">Terminal(Bash)</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+            </div>
+            <h3>Practices</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Linux CLI Workflow</span>
+            <span class="tag-pill">File system management</span>
+            <span class="tag-pill">Python scripting</span>
+            <span class="tag-pill">Object-oriented Programming</span>
+            <span class="tag-pill">File Handling</span>
+            <span class="tag-pill">Exception Handling</span>
+            <span class="tag-pill">Git version control</span>
+            <span class="tag-pill">CLI application development</span>
+            <span class="tag-pill">Modular code organization</span>
+            <span class="tag-pill">Problem Solving</span>
+            <span class="tag-pill">Debugging</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SERVICES ============================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>Services</p>
+        <h2>How I can help</h2>
+        <p class="desc">A closer look at what I work with day to day, grouped by area.</p>
+      </div>
+
+      <!-- EDIT: SERVICES — replace these rows (and their sub-tags) with your own offerings. Duplicate a .skill-row to add more. -->
+      <div class="skills-list">
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg>
+            </div>
+            <h3>Python</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Python Script Development</span>
+            <span class="tag-pill">CLI Tools Development</span>
+            <span class="tag-pill">File Automation</span>
+            <span class="tag-pill">File Organization Scripts</span>
+            <span class="tag-pill">Backup Automation</span>
+            <span class="tag-pill">Log File Parsing</span>
+            <span class="tag-pill">Bug Fixing</span>
+            <span class="tag-pill">Code Refactoring</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 10-10-3-3L5 16l-1 4z"/><path d="M14 6l3 3"/></svg>
+            </div>
+            <h3>Linux</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Bash Scripting</span>
+            <span class="tag-pill">Linux File Management</span>
+            <span class="tag-pill">Terminal Automation</span>
+            <span class="tag-pill">Basic System Administration</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4"/><path d="M15 3v4"/><path d="M6 7h12l-1 5a5 5 0 0 1-10 0L6 7z"/><path d="M12 16v5"/></svg>
+            </div>
+            <h3>Git &amp; GitHub</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag-pill">Git Repository</span>
+            <span class="tag-pill">Git Workflow</span>
+            <span class="tag-pill">GitHub Project Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CERTIFICATES (temporarily removed — delete this comment wrapper to bring it back) =============================
+  <section class="section section-alt" id="certificates">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>Certificates</p>
+        <h2>Credentials &amp; continued learning</h2>
+        <p class="desc">Courses, exams, and programs completed along the way.</p>
+      </div>
+
+      EDIT: CERTIFICATES — replace with your real certificates. Duplicate a .card.cert-card to add more.
+      <div class="grid grid-3">
+        <div class="card cert-card reveal">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 13.5L7 22l5-3 5 3-2-8.5"/></svg>
+          </div>
+          <h3>Certification title</h3>
+          <p class="cert-meta">Issuing organization · 2025</p>
+          <a href="#" class="cert-link">View credential
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="card cert-card reveal">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 13.5L7 22l5-3 5 3-2-8.5"/></svg>
+          </div>
+          <h3>Certification title</h3>
+          <p class="cert-meta">Issuing organization · 2024</p>
+          <a href="#" class="cert-link">View credential
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="card cert-card reveal">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 13.5L7 22l5-3 5 3-2-8.5"/></svg>
+          </div>
+          <h3>Certification title</h3>
+          <p class="cert-meta">Issuing organization · 2024</p>
+          <a href="#" class="cert-link">View credential
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  ============================= END CERTIFICATES ============================= -->
+
+  <!-- ============================= PROJECTS (GitHub) ============================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>Projects</p>
+        <h2>Recent work on GitHub</h2>
+        <p class="desc">Pulled live from GitHub.</p>
+      </div>
+
+      <div class="grid grid-3" id="projectGrid">
+        <div class="card-placeholder" style="grid-column:1/-1;">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+          </div>
+          <h3>Loading projects…</h3>
+          <p>Fetching the latest repositories from GitHub.</p>
+        </div>
+      </div>
+
+      <div class="projects-footer">
+        <a id="githubProfileLink" href="https://github.com/Thedemon-2766" class="btn btn-ghost" target="_blank" rel="noopener">View full GitHub profile →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= MORE (temporarily removed — delete this comment wrapper to bring it back) =============================
+  <section class="section section-alt" id="more">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>More</p>
+        <h2>Additional highlights</h2>
+        <p class="desc">A space for anything else worth sharing — talks, writing, awards, side projects.</p>
+      </div>
+
+      EDIT: MORE — turn these into real content, delete what you don't need, or add a whole new section (see the guide near the closing </body> tag).
+      <div class="grid grid-3">
+        <div class="card-placeholder reveal">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+          <h3>Writing</h3>
+          <p>Share articles, blog posts, or publications here.</p>
+        </div>
+        <div class="card-placeholder reveal">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+          <h3>Speaking</h3>
+          <p>Add talks, workshops, or conference appearances.</p>
+        </div>
+        <div class="card-placeholder reveal">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+          <h3>Recognition</h3>
+          <p>Awards, features, or other achievements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  ============================= END MORE ============================= -->
+
+  <!-- ============================= CONTACT ============================= -->
+  <section class="section contact" id="contact">
+    <div class="hero-bg" aria-hidden="true" style="mask-image:radial-gradient(ellipse 50% 70% at 50% 50%, black 30%, transparent 78%); -webkit-mask-image:radial-gradient(ellipse 50% 70% at 50% 50%, black 30%, transparent 78%);">
+      <div class="ripple r1"></div>
+      <div class="ripple r2"></div>
+    </div>
+    <div class="container contact-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span>Contact</p>
+        <h2>Let's build something</h2>
+        <p class="desc">Have a project in mind, or just want to say hello? My inbox is open.</p>
+      </div>
+      <!-- EDIT: CONTACT — replace the email address and each href="#" below with your real links.
+           Add more by copying a .social-link — the GitHub one auto-fills if you set GITHUB_USERNAME further down. -->
+      <a href="mailto:s12had.2766@gmail.com" class="contact-email reveal">s12had.2766@gmail.com</a>
+      <p class="contact-email-secondary reveal" style="font-size:0.95rem; opacity:0.75; margin-top:-0.5rem;">
+        or for quick chats / work communication: <a href="mailto:shunlauk@gmail.com">shunlauk@gmail.com</a>
+      </p>
+      <div class="social-row reveal">
+        <a href="#" id="socialGithub" class="social-link" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
+        <a href="https://www.fiverr.com/sellers/shunlauk" class="social-link" target="_blank" rel="noopener"><span class="dot"></span>Fiverr</a>
+        <a href="https://www.freelancer.in/u/Shunlauk" class="social-link" target="_blank" rel="noopener"><span class="dot"></span>Freelancer</a>
+        <a href="https://www.linkedin.com/in/shunlauk" class="social-link" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+        <a href="#" class="social-link" target="_blank" rel="noopener"><span class="dot"></span>X (Twitter)</a>
+        <a href="#" class="social-link" target="_blank" rel="noopener"><span class="dot"></span>Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="#home" class="footer-brand">
+        <img src="assets/logo-mark.png" alt="" />
+        <span>SHUNLAUK</span>
+      </a>
+      <p class="footer-tagline">Building thoughtfully, one project at a time.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-links">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- Certificates temporarily removed — restore this link when the section comes back: <li><a href="#certificates">Certificates</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Elsewhere</h4>
+        <!-- EDIT: keep these in sync with the contact section above -->
+        <ul>
+          <li><a href="#" id="footerGithub" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.fiverr.com/sellers/shunlauk" target="_blank" rel="noopener">Fiverr</a></li>
+          <li><a href="https://www.freelancer.in/u/Shunlauk" target="_blank" rel="noopener">Freelancer</a></li>
+          <li><a href="https://www.linkedin.com/in/shunlauk" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">X (Twitter)</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Shunlauk. Built with intention.</p>
+    <button id="toTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg>
+    </button>
+  </div>
+</footer>
+
+<!-- =============================================================
+     HOW TO ADD A WHOLE NEW SECTION
+     1. Copy a <section class="section" id="..."> ... </section> block above.
+     2. Give it a new id, e.g. id="blog".
+     3. Add a matching link in the nav: <a href="#blog">Blog</a>
+     4. Add it to the footer's "Sections" list too, if you'd like.
+============================================================== -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
