@@ -2,7 +2,7 @@
   // EDIT: GITHUB — set your username to auto-load real repos.
   // Leave blank ("") to keep the placeholder project cards above.
   // -----------------------------------------------------------
-  const GITHUB_USERNAME = "Shunlauk";
+  const GITHUB_USERNAME = "shunlauk";
   const GITHUB_REPO_COUNT = 6;
 
   // -----------------------------------------------------------
