@@ -3,7 +3,7 @@
   // Leave blank ("") to keep the placeholder project cards above.
   // -----------------------------------------------------------
 const GITHUB_USERNAME = "shunlauk";
-const GITHUB_REPO_COUNT = 6;
+const GITHUB_REPO_COUNT = 10;
 
   // -----------------------------------------------------------
   // EDIT: HIDE REPOS — add repo names (exactly as on GitHub) here
